@@ -40,6 +40,7 @@ label{
     position: relative;
 
 }
+
 input{
     width: 100%;
     padding: 5px;
@@ -89,4 +90,32 @@ textarea:hover{
     text-shadow: 0 0 3px rgb(74, 73, 78);
     color: rgb(74, 73, 78);
     text-align: center;
+}
+#cvImage {
+    display: none; /* Image initially hidden */
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: rgb(1, 102, 204);
+   
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    background: rgb(1, 17, 41);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: 1px solid rgb(1, 102, 204);
+
 }

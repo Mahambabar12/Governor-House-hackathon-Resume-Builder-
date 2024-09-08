@@ -70,6 +70,23 @@ document.getElementById('cv-form').style.display='none'
     document.getElementById('cv-template').style.display='block'
 
 }
+// function showCV() {
+//     var img = document.getElementById('cvImage');
+//     img.style.display = 'block';  // Show the image when button is clicked
+// }
+
+function toggleCV() {
+    var img = document.getElementById('cvImage');
+    var button = document.querySelector('button');
+    
+    if (img.style.display === 'none' || img.style.display === '') {
+        img.style.display = 'block';  // Show the image
+        button.textContent = 'Hide Resume'; // Change button text to "Hide"
+    } else {
+        img.style.display = 'none';  // Hide the image
+        button.textContent = 'My Resume'; // Change button text to "Show"
+    }
+}
 
 
 //print cv
